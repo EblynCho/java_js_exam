@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+
+    let bucket = [];
+    for (let i = 0; i < 10; i++) {
+      bucket[i] = prompt("하고싶은 일을 입력하세요");
+    }
+    bucket.sort(() => (Math.random() - 0.5));
+
+    console.log("----- 내 버킷 리스트 -----");
+
+    let random5 = bucket.slice(0,5);
+    for (let i = 0; i < random5.length; i++) {
+      console.log(random5[i]);
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

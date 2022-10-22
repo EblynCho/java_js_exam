@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let input = prompt("날짜를 입력하세요");
+        let nday = new Date(input);
+        // console.log(nday.getDay());
+        let week = new Array("일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일");
+        console.log(input + " " + week[nday.getDay()]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
